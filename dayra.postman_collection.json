@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "9390f0fd-1748-49e5-afda-a18e5c1c2dbe",
+		"name": "dayra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "w.hamdydeif@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "secret",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/user/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store client",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmMyMmFjODg1ZDlkZjllM2E5NjFmNTU1ZTM1YTVjOTZkNTE1Mjk2ZTk5YWVkM2Q2NDc2MDNjZmYzNmI0ZTU3NmE5OWNmMjI3YTU0OTE1YWEiLCJpYXQiOjE2NDE2NTg5NDcsIm5iZiI6MTY0MTY1ODk0NywiZXhwIjoxNjczMTk0OTQ3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.HGPj-SUbUPl3FJhbq08Ck1amqFD08CjRwACWKYlqLtVBE2dvDyXEe3c0uypa8UW7rXTju0yW9JKUrGFMzFhVMlEdc3crQ91OWoh-poyZsaJVwFG3wFSvpWYxduiqJ6PS7-2FPqSU8v-4hkklpx_q5_S3Ug0Rm2Y98YfXZjbhl-Q6Z4hvseCpHSyIlQRzoYKZKJ3iT-S2E8933eepNjHeUAjgy4eOIVHBSu-3zyiqxCHcH0MAo1LffchCkcxTrAzzEfRy38setDBhBDER32dlKpS5-JE1X4BEBodTZ4Ra-KbAYWEFWzvwLxFnyXc2oD1OxDBOi8OdGrzvtTWJp9uhunafT78idzimENB3sc0eTiH22idb1MVh__I6KYmJCmeSR1yfAxy_CKItDoBoJkmO627HmZfI1k83rebZ0t0UDLnNoDFuYCVFM34_KZsbyEmQ17YGYNYxeBuFtqu2NYROZrMlaV4CGL5Xuh-LgNh4yoYgzgAf6_ts-bN7eayhaKHbdLAeC1HLWNpBySpnyLzY5bXtYrEuCXJ5ppgI7GtTxfkMRaw1FPcvbKDALEFpkXyfaQwGas3hlbL6SuVIrWCcsR64FQKl4Vz3wAubzSFWEMBxlBzBpAFpjq1LrkYTYisfwuqb98iJ992cPCr95HzcXYoMWrwLaT8g0Gv8wSEdnMg",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"hamdy\",\r\n  \"email\": \"te@test.com\",\r\n  \"mobile\": \"12345678\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/client/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"client",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store invoice",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMmMyMmFjODg1ZDlkZjllM2E5NjFmNTU1ZTM1YTVjOTZkNTE1Mjk2ZTk5YWVkM2Q2NDc2MDNjZmYzNmI0ZTU3NmE5OWNmMjI3YTU0OTE1YWEiLCJpYXQiOjE2NDE2NTg5NDcsIm5iZiI6MTY0MTY1ODk0NywiZXhwIjoxNjczMTk0OTQ3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.HGPj-SUbUPl3FJhbq08Ck1amqFD08CjRwACWKYlqLtVBE2dvDyXEe3c0uypa8UW7rXTju0yW9JKUrGFMzFhVMlEdc3crQ91OWoh-poyZsaJVwFG3wFSvpWYxduiqJ6PS7-2FPqSU8v-4hkklpx_q5_S3Ug0Rm2Y98YfXZjbhl-Q6Z4hvseCpHSyIlQRzoYKZKJ3iT-S2E8933eepNjHeUAjgy4eOIVHBSu-3zyiqxCHcH0MAo1LffchCkcxTrAzzEfRy38setDBhBDER32dlKpS5-JE1X4BEBodTZ4Ra-KbAYWEFWzvwLxFnyXc2oD1OxDBOi8OdGrzvtTWJp9uhunafT78idzimENB3sc0eTiH22idb1MVh__I6KYmJCmeSR1yfAxy_CKItDoBoJkmO627HmZfI1k83rebZ0t0UDLnNoDFuYCVFM34_KZsbyEmQ17YGYNYxeBuFtqu2NYROZrMlaV4CGL5Xuh-LgNh4yoYgzgAf6_ts-bN7eayhaKHbdLAeC1HLWNpBySpnyLzY5bXtYrEuCXJ5ppgI7GtTxfkMRaw1FPcvbKDALEFpkXyfaQwGas3hlbL6SuVIrWCcsR64FQKl4Vz3wAubzSFWEMBxlBzBpAFpjq1LrkYTYisfwuqb98iJ992cPCr95HzcXYoMWrwLaT8g0Gv8wSEdnMg"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"hamdy\",\r\n  \"email\": \"w.hamdydeif@gmail.com\",\r\n  \"mobile\": \"01095614864\",\r\n  \"due_date\": \"2022-01-05\",\r\n  \"amount\": \"210\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/invoice/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"invoice",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
